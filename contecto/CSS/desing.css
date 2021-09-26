@@ -1,0 +1,810 @@
+*
+{
+	margin: 0;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body
+{
+	font-family: 'Merriweather';
+	font-size: 16px;
+	background: rgb(230,230,230);
+}
+
+header
+{
+	width: 100%;
+	height: auto;
+	background: rgb(21,54,65);
+}
+
+
+header #menu
+{
+	width: 90%;
+	max-width: 1700px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#menu #logo figure
+{
+	width: 150px;
+	height: 50px;
+	margin: 1em 0 1em 0;
+}
+
+#menu #logo figure img
+{
+	width: 100%;
+	height: 100%;
+}
+
+#menu #logo a:nth-of-type(2),
+#menu #logo a:nth-of-type(3)
+{
+	position: absolute;
+	top: 0;
+	margin-left: 83%;
+	margin-top: 1em;
+	text-decoration: none;
+	color: rgb(148,207,201);
+}
+
+#menu #logo a:nth-of-type(2):before
+{
+	font-family: 'icomoon';
+	content: "\e5d2";
+	font-size: 2.7em;
+}
+
+#menu #logo a:nth-of-type(3):before
+{
+	font-family: 'icomoon';
+	content: "\e5cd";
+	font-size: 2.7em;
+	display: none;
+}
+
+#menu #card_menu
+{
+	position: absolute;
+	top: 82px;
+	width: 90%;
+	height: auto;
+	background: rgba(21,54,65,.9);
+	padding: 2em;
+	display: none;
+}
+
+#menu #card_menu #enlaces
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 300px;
+}
+
+#menu #card_menu #enlaces a
+{
+	color: rgb(148,207,201);
+	text-decoration: none;
+	font-family: 'EB Garamond';
+	font-size: 1.3em;
+}
+
+main
+{
+	width: 90%;
+	margin: 0 auto;
+	max-width: 1000px;
+	height: auto;
+	margin-top: 55px;
+}
+
+main #perfil
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 55px;
+}
+
+main #perfil #photo
+{
+	padding-bottom: 50px;
+}
+
+main #perfil #photo figure
+{
+	height: 300px;
+	width: 300px;
+}
+
+main #perfil #photo figure img
+{
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+}
+
+
+main #perfil #description h2
+{
+	font-family: 'EB Garamond';
+	font-size: 2em;
+	display: inline;
+	background: rgb(21,54,65);
+	color: white;
+}
+
+
+main #perfil #description #borde
+{
+	border: 1px solid;
+	border-color: rgb(21,54,65)
+	rgb(21,54,65) rgb(71,153,183) rgb(71,153,183);
+	background: white;
+}
+
+main #perfil #description #borde >*
+{
+	width: 90%;
+	margin: 0 auto;
+}
+
+main #perfil #description h1
+{
+	font-family: 'EB Garamond';
+	font-size: 1.5em;
+	padding-top: 25px;
+	padding-bottom: 5px;
+}
+
+main #perfil #description h5
+{
+	font-family: 'EB Garamond';
+	font-size: 1.3em;
+	padding-bottom: 25px;
+}
+
+main #perfil #description p
+{
+	text-indent: 1.5em;
+	padding-bottom: 25px;
+}
+
+main #experiencia
+{
+	background: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding-bottom: 35px;
+	margin-bottom: 55px;
+	box-shadow: 3px 3px 3px rgba(21,54,65,.9);
+}
+
+main #experiencia #academica h2
+{
+	font-family: 'EB Garamond';
+	font-size: 2em;
+	display: inline;
+	padding: 0;
+	background: rgb(21,54,65);
+	color: white;
+}
+
+main #experiencia #academica .itemsAcademica
+{
+	padding-top: 55px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+main #experiencia #academica .itemsAcademica h4
+{
+	font-family: 'EB Garamond';
+	font-size: 1.3em;
+}
+
+main #experiencia #academica .itemsAcademica h4:before
+{
+	font-family: 'icomoon';
+	content: "\e80c";
+	font-size: .9em;
+	margin-right: 5px;
+	color: rgb(71,153,183);
+}
+
+main #experiencia #academica .itemsAcademica h5
+{
+	font-family: 'EB Garamond';
+	font-size: 1.2em;
+	padding-top: 25px;
+	text-indent: 23px;
+}
+
+main #experiencia #academica .itemsAcademica h5 a
+{
+	color: black;
+}
+
+main #proyectos
+{
+	padding-bottom: 35px;
+	margin-bottom: 55px;
+	background: white;
+	box-shadow: 3px 3px 3px rgba(21,54,65,.9);
+}
+
+main #proyectos h2
+{
+	font-family: 'EB Garamond';
+	font-size: 2em;
+	display: inline;
+	background: rgb(21,54,65);
+	color: white;
+}
+
+main #proyectos #proyectosContainer
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding-top: 45px;
+}
+
+main #proyectos #proyectosContainer .itemsProyectos
+{
+	width: 40%;
+	padding-bottom: 25px;
+}
+
+main #proyectos #proyectosContainer .itemsProyectos figure
+{
+	height: 150px;
+	padding-bottom: 10px;
+}
+
+main #proyectos #proyectosContainer .itemsProyectos figure img
+{
+	width: 100%;
+	height: 100%;
+}
+
+main #proyectos #proyectosContainer .itemsProyectos a
+{
+	text-decoration: none;
+}
+
+main #proyectos #proyectosContainer .itemsProyectos h4
+{
+	color: black;
+}
+
+main #habilidadesCompetencias
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+main #habilidadesCompetencias #habilidades
+{
+	padding-bottom: 35px;
+	margin-bottom: 55px;
+}
+
+main #habilidadesCompetencias #habilidades h2#hab
+{
+	font-family: 'EB Garamond';
+	font-size: 2em;
+	display: inline;
+	padding: 0;
+	background: rgb(21,54,65);
+	color: white;
+}
+
+main #habilidadesCompetencias #habilidades #container
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+main #habilidadesCompetencias #habilidades #container h2
+{
+	font-family: 'EB Garamond';
+	font-size: 1.5em;
+	display: inline;
+	color: black;
+	padding-top: 45px;
+	padding-bottom: 15px;
+}
+
+main #habilidadesCompetencias #habilidades #container #itemsHabilidades1
+{
+	border: 3px solid black;
+	padding-bottom: 30px;
+	background: white;
+}
+
+main #habilidadesCompetencias #habilidades #container #itemsHabilidades1 h4
+{
+	padding-top: 30px;
+	padding-bottom: 5px;
+	margin-left: 10%;
+	display: inline-block;
+}
+
+main #habilidadesCompetencias #habilidades #container #itemsHabilidades1 p
+{
+	display: inline-block;
+	float: right;
+	margin-right: 10%;
+	margin-top: 30px;
+}
+
+main #habilidadesCompetencias #habilidades #container #itemsHabilidades1 p:after,
+main #habilidadesCompetencias #habilidades #container #itemsHabilidades1 p:before
+{
+	content: '';
+	clear: both;
+}
+
+.skills
+{
+	width: 80%;
+	padding: 1px;
+	margin: 0 auto;
+	border: 3px solid rgb(34,85,110);
+	border-radius: 25px;
+	background: white;
+}
+
+.skills_level
+{
+	background: rgb(71,153,183);
+	width: 100%;
+	height: 10px;
+	border-radius: 5px;
+}
+
+.barra1
+{
+	width: 75%;
+	position: relative;
+}
+
+.barra2
+{
+	width: 70%;
+	position: relative;
+}
+
+.barra3
+{
+	width: 70%;
+	position: relative;
+}
+
+.barra4
+{
+	width: 30%;
+	position: relative;
+}
+
+.barra5
+{
+	width: 40%;
+	position: relative;
+}
+
+.barra6
+{
+	width: 40%;
+	position: relative;
+}
+
+.barra7
+{
+	width: 55%;
+	position: relative;
+}
+
+main #habilidadesCompetencias #habilidades #container #itemsHabilidades2
+{
+	border: 3px solid black;
+	padding-bottom: 30px;
+	position: relative;
+	background: white;
+}
+
+main #habilidadesCompetencias #habilidades #container #itemsHabilidades2 h4
+{
+	padding-top: 30px;
+	padding-bottom: 5px;
+	margin-left: 10%;
+	display: inline-block;
+}
+
+main #habilidadesCompetencias #habilidades #container #itemsHabilidades2 p
+{
+	display: inline-block;
+	float: right;
+	margin-right: 10%;
+	margin-top: 30px;
+}
+
+main #habilidadesCompetencias #habilidades #container #itemsHabilidades2 p:after,
+main #habilidadesCompetencias #habilidades #container #itemsHabilidades2 p:before
+{
+	content: '';
+	clear: both;
+}
+
+.barra8
+{
+	width: 75%;
+	position: relative;
+}
+
+.barra9
+{
+	width: 45%;
+	position: relative;
+}
+
+.barra10
+{
+	width: 60%;
+	position: relative;
+}
+
+.barra11
+{
+	width: 60%;
+	position: relative;
+}
+
+.barra12
+{
+	width: 35%;
+	position: relative;
+}
+
+main #habilidadesCompetencias #competencias
+{
+	padding-bottom: 35px;
+	margin-bottom: 55px;
+	box-shadow: 3px 3px 3px rgba(21,54,65,.9);
+	background: white;
+}
+
+main #habilidadesCompetencias #competencias h2
+{
+	font-family: 'EB Garamond';
+	font-size: 2em;
+	display: inline;
+	padding: 0;
+	background: rgb(21,54,65);
+	color: white;
+}
+
+main #habilidadesCompetencias #competencias #itemsCompetencias
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 55px;
+}
+
+#group1,
+#group2
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 100%;
+	height: 150px;
+	font-size: 1em;
+}
+
+main #habilidadesCompetencias #competencias #itemsCompetencias p:before
+{
+	font-family: 'icomoon';
+	content: "\e5c8";
+	margin-right: 5px;
+	color: rgb(148,207,201);
+}
+
+footer
+{
+	width: 100%;
+	height: auto;
+	background: black;
+}
+
+footer #rrss
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 70%;
+	margin: 0 auto;
+	padding-bottom: 25px;
+}
+
+footer #rrss a
+{
+	font-size: 2.5em;
+	text-decoration: none;
+}
+
+footer #rrss a:nth-of-type(1)::before
+{
+	font-family: 'icomoon';
+	content: "\e903";
+	color: #1da1f2;
+}
+
+footer #rrss a:nth-of-type(2)::before
+{
+	font-family: 'icomoon';
+	content: "\e909";
+	color: #e4405f;
+}
+
+footer #rrss a:nth-of-type(3)::before
+{
+	font-family: 'icomoon';
+	content: "\e901";
+	color: #0077b5;
+}
+
+footer #rrss a:nth-of-type(4)
+{
+	color: #F8931F;
+}
+
+footer p
+{
+	text-align: center;
+	color: white;
+}
+
+footer p:nth-of-type(1)
+{
+	font-size: 1em;
+	padding-top: 25px;
+	padding-bottom: 15px;
+}
+
+footer p:nth-of-type(2)
+{
+	font-size: .8em;
+}
+
+@media screen and (min-width: 600px)
+{
+	
+}
+
+@media screen and (min-width: 767px)
+{
+	#menu #logo
+	{
+		z-index: 100;
+	}
+
+	#menu #card_menu
+	{
+		top: 0;
+		height: 82px;
+		padding:0;
+		background: none;
+		display: inline-block;
+	}
+
+	#menu #card_menu #enlaces
+	{
+		flex-direction: row;
+		justify-content: flex-end;
+		align-items: center;
+		height: 82px;
+	}
+
+	#menu #card_menu #enlaces a
+	{
+		font-size: 1em;
+		margin-left: 0.1em;
+		padding: 32px 3px 32px 3px;
+	}
+
+	#menu #card_menu #enlaces a:hover
+	{
+		background: rgb(148,207,201);
+		color: rgb(21,54,65);
+	}
+
+	#menu #logo a:nth-of-type(2):before
+	{
+		display: none;
+	}
+
+}
+
+@media screen and (min-width: 950px)
+{
+
+	#menu #card_menu #enlaces a
+	{
+		font-size: 1.3em;
+		margin-left: 0.1em;
+		padding: 30px 3px 30px 3px;
+	}
+
+	main
+	{
+		width: 100%;
+		padding-top: 0px;
+	}
+
+	main #perfil
+	{
+		flex-direction: row;
+		justify-content: space-around;
+		padding-bottom: 0px;
+	}
+
+	main #perfil #photo
+	{
+		padding-bottom: 0px;
+	}
+
+	main #perfil #photo figure
+	{
+		height: 250px;
+		width: 250px;
+		padding-top: 25px;
+	}
+
+	main #perfil #description
+	{
+		width: 60%;
+		box-shadow: 5px 5px 5px rgba(21,54,65,.9);
+	}
+
+
+	main #perfil #description h2
+	{
+		display: block;
+	}
+
+
+	main #perfil #description #borde
+	{
+		width: 100%;
+		margin: 0 auto;
+		border: none;
+	}
+
+	main #expereienciaProyectos
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: flex-start;
+		width: 95%;
+		margin: 0 auto;
+	}
+
+	main #experiencia
+	{
+		padding-bottom: 55px;
+		width: 45%;
+	}
+
+	main #proyectos
+	{
+		width: 45%;
+		padding-bottom: 55px;
+	}
+
+	main #proyectos h2
+	{
+		font-family: 'EB Garamond';
+		font-size: 2em;
+		display: inline;
+		background: rgb(21,54,65);
+		color: white;
+	}
+
+	main #proyectos #proyectosContainer
+	{
+		padding-top: 55px;
+	}
+
+	main #habilidadesCompetencias #habilidades
+	{
+		padding-bottom: 55px;
+		width: 95%;
+		margin: 0 auto;
+	}
+
+	main #habilidadesCompetencias #habilidades #container
+	{
+		flex-direction: row;
+		justify-content: space-around;
+		padding-top: 75px;
+		position: relative;
+	}
+
+	main #habilidadesCompetencias #habilidades #container h2
+	{
+		padding-bottom: 15px;
+		position: absolute;
+		top: 0;
+	}
+
+	main #habilidadesCompetencias #habilidades #container h2:nth-of-type(1)
+	{
+		left: 5%;
+	}
+
+	main #habilidadesCompetencias #habilidades #container h2:nth-of-type(2)
+	{
+		left: 55%;
+	}
+
+	main #habilidadesCompetencias #habilidades #container #itemsHabilidades1
+	{
+		width: 43%;
+	}
+
+	main #habilidadesCompetencias #habilidades #container #itemsHabilidades2
+	{
+		width: 43%;
+	}
+
+	main #habilidadesCompetencias #competencias
+	{
+		padding-bottom: 35px;
+		width: 95%;
+		margin: 0 auto;
+		margin-bottom: 55px;
+	}
+
+	main #habilidadesCompetencias #competencias #itemsCompetencias p
+	{
+		font-size: 1.3em;
+	}
+
+	main #habilidadesCompetencias #competencias #itemsCompetencias p:before
+	{
+		font-size: 1.3em;
+	}
+
+	footer #rrss
+	{
+		width: 30%;
+	}
+
+	footer #rrss a
+	{
+		font-size: 3.5em;
+	}
+}
